@@ -6,3 +6,8 @@
 #
 # 
 #
+
+cookbook_file 'sammich' do
+  path '/etc/motd'
+  action [ :delete, :create ]
+end
